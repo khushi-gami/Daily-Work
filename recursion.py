@@ -78,31 +78,31 @@ odd_num(10)
 # sum of all even number --------------------------
 
 total = 0
-def even_sum(n):
+def sum_even(n):
     global total
     if n == 0:
         return 
 
-    even_sum(n-1)
+    sum_even(n-1)
     if n % 2 == 0:
         total += n
     return total 
-print("Total of even numbers : ",even_sum(10))
+print("Total of even numbers : ",sum_even(10))
 
 
 # sum of all odd number --------------------------
 
 total = 0
-def odd_sum(n):
+def sum_odd(n):
     global total
     if n == 0:
         return 
 
-    odd_sum(n-1)
+    sum_odd(n-1)
     if n % 2 != 0:
         total += n
     return total 
-print("Total of even numbers : ",odd_sum(7))
+print("Total of even numbers : ",sum_odd(7))
 
 
 
