@@ -45,6 +45,19 @@ def factorial(n):
     return n * factorial(n-1)
 print("Factorial : ",factorial(5))
 
+# print fibonacci series -------------------------
+
+def fibonacci(n):
+    if n <= 1:
+        return n
+
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+number = 7
+
+for i in range(number):
+    print(fibonacci(i), end=" ")
+
 
 # print even number -----------------------------
 
